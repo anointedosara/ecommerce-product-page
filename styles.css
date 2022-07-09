@@ -125,7 +125,7 @@ html {
     pointer-events: none;
 }
 
-.dropdown div:first-child {
+.first-cart-section {
     padding: 20px;
     font-size: 13px;
     font-weight: 700;
@@ -614,7 +614,7 @@ span {
         background: white;
         height: 100vh;
         width: 70%;
-        padding: 20px;
+        padding: 30px 20px;
         left: -80%;
         opacity: 0;
         transition: 0.5s all ease;
