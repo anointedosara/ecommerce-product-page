@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e852077c87.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+    <nav class="navbar">
+        <div class="div1">
+            <div class="div2">
+                <img class="menu" src="./images/icon-menu.svg" alt="">
+                <img src="./images/logo.svg" alt="">
+                <div>Collections</div>
+                <div>Men</div>
+                <div>Women</div>
+                <div>About</div>
+                <div>Contact</div>
+            </div>
+            <div class="div3">
+                <div class="img-div">
+                    <img class="img1" src="./images/icon-cart.svg" alt="">
+                    <div class="num">0</div>
+                </div>
+                <div class="outsideDiv"></div>
+                <div class="dropdown">
+                    <div>Cart</div>
+                    <div class="cart-item">
+                        <div class="empty">
+                            Your cart is empty
+                        </div>
+                    </div>
+                </div>
+                <img class="img2" src="./images/image-avatar.png" alt="">
+                <div class="num">0</div>
+            </div>
+
+            <div class="drop">
+                <img class="close-menu" src="./images/icon-close.svg" alt="">
+                <p>Collections</p>
+                <p>Men</p>
+                <p>Women</p>
+                <p>About</p>
+                <p>Contact</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="slide-container">
+            <div class="sliding">
+                <div class="slide" id="slide">
+                    <img class="product1 product" src="./images/image-product-1.jpg" alt="">
+                    <img class="product2 product" src="./images/image-product-2.jpg" alt="">
+                    <img class="product3 product" src="./images/image-product-3.jpg" alt="">
+                    <img class="product4 product" src="./images/image-product-4.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="slider">
+                <div class="thumbnail1 thumbnail bg outline">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                <div class="thumbnail2 thumbnail">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="">
+                </div>
+                <div class="thumbnail3 thumbnail">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="">
+                </div>
+                <div class="thumbnail4 thumbnail">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-slide" id="modal-slide">
+            <div class="previous">
+                <img src="./images/icon-previous.svg" alt="">
+            </div>
+            <div class="next">
+                <img src="./images/icon-next.svg" alt="">
+            </div>
+            <img class="big-img1 big-img " src="./images/image-product-1.jpg" alt="">
+            <img class="big-img2 big-img" src="./images/image-product-2.jpg" alt="">
+            <img class="big-img3 big-img" src="./images/image-product-3.jpg" alt="">
+            <img class="big-img4 big-img" src="./images/image-product-4.jpg" alt="">
+        </div>
+
+        <div class="sneaker">
+            <p class="p1">Sneaker Company</p>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p class="p2">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            <div class="p-div">
+                <p class="p3">$125.00 <span>50%</span></p>
+                <p class="p4">$250.00</p>
+            </div>
+            <div class="add">
+                <div class="quantity">
+                    <div class="plus-minus">
+                        <div class="minus-img">
+                            <img src="./images/icon-minus.svg" alt="">
+                        </div>
+                        <div class="number">
+                            0
+                        </div>
+                        <div class="plus-img">
+                            <img src="./images/icon-plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-div">
+            <div class="close">
+                <img src="./images/icon-close.svg" alt="">
+            </div>
+            <div class="modal-slide">
+                <div class="previous">
+                    <img src="./images/icon-previous.svg" alt="">
+                </div>
+                <div class="next">
+                    <img src="./images/icon-next.svg" alt="">
+                </div>
+                <img class="big-img1 big-img " src="./images/image-product-1.jpg" alt="">
+                <img class="big-img2 big-img" src="./images/image-product-2.jpg" alt="">
+                <img class="big-img3 big-img" src="./images/image-product-3.jpg" alt="">
+                <img class="big-img4 big-img" src="./images/image-product-4.jpg" alt="">
+            </div>
+            <div class="modal-slider">
+                <div class="small-img1 small-img bg outline">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                <div class="small-img2 small-img">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="">
+                </div>
+                <div class="small-img3 small-img">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="">
+                </div>
+                <div class="small-img4 small-img">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
