@@ -149,20 +149,71 @@ previous.onclick = () => {
 
 arrowShowImage()
 
+let mobileArrowImageToShow = 0;
+
+let mobileArrowShowImage = () => {
+    mobileBigImgs.forEach((mobileBigImg, i) => {
+        if (i != mobileArrowImageToShow) {
+            mobileBigImg.classList.remove("opacity")
+        } else {
+            mobileBigImg.classList.add("opacity")
+        }
+    })
+}
+
+let mobileNext = document.querySelector(".mobile-next")
+let mobileBigImgs = document.querySelectorAll(".mobile-big-img")
+let mobilePrevious = document.querySelector(".mobile-previous")
+
+
+mobileNext.onclick = () => {
+    if (mobileArrowImageToShow === 3) {
+        mobileArrowImageToShow -= 4;
+    }
+    mobileArrowImageToShow += 1;
+    mobileArrowShowImage()
+}
+
+mobilePrevious.onclick = () => {
+    if (mobileArrowImageToShow === 0) {
+        mobileArrowImageToShow += 4;
+    }
+    mobileArrowImageToShow -= 1;
+    mobileArrowShowImage()
+}
+
+mobileArrowShowImage()
+
 let btn = document.querySelector(".btn")
 let num = document.querySelector(".num")
 let empty = document.querySelector(".empty")
+let cartItem = document.querySelector(".cart-item")
 let cartItemsCount = 0
 
 btn.addEventListener("click", () => {
     if (value !== 0) {
         cartItemsCount += 1
         num.innerHTML = cartItemsCount
+        num.style.display = "block"
+        empty.style.display = "none";
+
+        document.querySelector(".cart-item").innerHTML +=
+            `<div class="checkout-div">
+                <div class="checkout-quantity">
+                   <div class="checkout-img"><img src="./images/image-product-1.jpg" alt="">
+                        <div class="amount">
+                            <p>Fall Limited Edition Sneakers</p>
+                            <p><span class="first-span">$125.00 x ${number.innerHTML}</span> <span class="last-span">$${eval(125*number.innerHTML)}.00</span>
+                        </div>
+                   </div>
+                   <img class="trash" src="./images/icon-delete.svg" alt="">
+                </div>
+                <button class="checkout-btn">Checkout</button>
+             </div>`;
         value = 0;
         number.innerHTML = value
-        num.style.display = "block"
-        empty.style.display = none;
     }
+
 })
 
 let menu = document.querySelector(".menu")
@@ -173,9 +224,17 @@ let closeMenu = document.querySelector(".close-menu")
 menu.addEventListener("click", () => {
     drop.classList.add("open")
     body.style.overflow = "hidden"
+    mobileNext.classList.add("event")
+    imgDiv.classList.add("event")
+    plusImg.classList.add("event")
+    btn.classList.add("event")
 })
 
 closeMenu.addEventListener("click", () => {
     drop.classList.remove("open")
     body.style.overflow = ""
+    mobileNext.classList.remove("event")
+    imgDiv.classList.remove("event")
+    plusImg.classList.remove("event")
+    btn.classList.remove("event")
 })
