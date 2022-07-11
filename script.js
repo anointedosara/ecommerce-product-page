@@ -4,6 +4,10 @@ let dropdown = document.querySelector(".dropdown")
 imgDiv.addEventListener("click", () => {
     dropdown.classList.toggle("cart")
     outsideDiv.style.display = "block"
+    if (outsideDiv.style.display === "block") {
+        body.style.overflow = "hidden"
+    }
+
 })
 
 let imageToShow = 0;
@@ -110,7 +114,7 @@ slide.addEventListener("click", () => {
     modal.classList.add("top")
 })
 
-let close = document.querySelector(".close")
+let close = document.querySelector(".close img")
 
 close.addEventListener("click", () => {
     modal.classList.remove("top")

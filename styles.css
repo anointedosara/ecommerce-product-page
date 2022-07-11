@@ -717,6 +717,12 @@ span {
     .cart {
         opacity: 1;
     }
+    .overflow {
+        overflow: hidden;
+    }
+    .auto {
+        overflow: auto;
+    }
     .container {
         padding: 70px 50px 0 50px;
     }
