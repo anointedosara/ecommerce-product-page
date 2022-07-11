@@ -98,6 +98,8 @@ let outsideDiv = document.querySelector(".outsideDiv")
 outsideDiv.addEventListener("click", () => {
     dropdown.classList.remove("cart")
     outsideDiv.style.display = "none"
+    drop.classList.remove("open")
+    body.style.overflow = ""
 })
 
 
@@ -224,17 +226,11 @@ let closeMenu = document.querySelector(".close-menu")
 menu.addEventListener("click", () => {
     drop.classList.add("open")
     body.style.overflow = "hidden"
-    mobileNext.classList.add("event")
-    imgDiv.classList.add("event")
-    plusImg.classList.add("event")
-    btn.classList.add("event")
+    outsideDiv.style.display = "block"
 })
 
 closeMenu.addEventListener("click", () => {
     drop.classList.remove("open")
     body.style.overflow = ""
-    mobileNext.classList.remove("event")
-    imgDiv.classList.remove("event")
-    plusImg.classList.remove("event")
-    btn.classList.remove("event")
+    outsideDiv.style.display = "none"
 })

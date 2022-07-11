@@ -287,6 +287,10 @@ html {
     transition: 0.3s all ease;
 }
 
+.slider div img:hover {
+    opacity: 0.5;
+}
+
 .outline {
     outline: 3px solid hsl(26, 100%, 55%) !important;
 }
@@ -397,6 +401,11 @@ span {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 20px 30px 2px hsl(25, 100%, 88%);
+    transition: 0.5s all ease;
+}
+
+.btn:hover {
+    background: hsl(26, 90%, 69%);
 }
 
 .btn i {
@@ -471,12 +480,18 @@ span {
     outline: 3px solid rgba(0, 0, 0, 0);
     background: white;
     cursor: pointer;
+    transition: 0.5s all ease;
 }
 
 .modal-slider div img {
     width: 100%;
     border-radius: 7px;
     margin-bottom: -5px;
+    transition: 0.5s all ease;
+}
+
+.modal-slider div img:hover {
+    opacity: 0.5;
 }
 
 .border {
@@ -757,6 +772,7 @@ span {
         left: -80%;
         opacity: 0;
         transition: 0.5s all ease;
+        z-index: 10000000000000000;
     }
     .drop p {
         font-size: 19px;
